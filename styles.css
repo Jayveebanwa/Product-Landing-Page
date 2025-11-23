@@ -1,3 +1,14 @@
+#container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #070e00;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
 #company {
     color: #Bed24d;
 }
@@ -30,12 +41,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #162D00 ;
-    width: 100%;
-    padding: 0px 10px;
-    padding-top: 20px;
+    padding: 20px 40px;
     padding-bottom: 20px;
-    box-sizing: border-box;
-
+    z-index: 100;
     position: sticky;
     top: 0;
     border: black;
@@ -88,8 +96,13 @@ body::before {
         background-color: rgb(227, 181, 81);
     }
     nav { 
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
+        align-items: center;
+    }
+    #container {
+        width: 95%;
+        padding: 20px;
     }
 }
 
@@ -114,10 +127,11 @@ section {
     border-radius: 15px;
 }
 
-#product-img {
+.product-img {
     width: 400px;
     height: auto;
     padding-bottom: 30px;
+    align-content: center;
 }
 h1 {
     font-weight: bolder;
@@ -135,8 +149,24 @@ div, p {
     font-size: 18px;
 }
 
-#Premium-Basket, #Normal-Basket, #Budget-Basket, #outro {
-    padding: 10px;
+.product-card {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    background-color: rgba(22, 45, 0, 0.8);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.product-card ul {
+    list-style: inside;
+    text-align: left;
+}
+
+#outro {
+    padding: 20px;
     padding-left: 30px;
     margin: 10px;
     border-radius: 15px;
@@ -146,8 +176,11 @@ div, p {
     margin-left: 50px;
 }
 
-input { 
-    size: 20%;
+input[type="email"], input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
 }
 
 .credit {
