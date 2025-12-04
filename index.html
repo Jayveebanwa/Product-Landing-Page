@@ -4,109 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title> Jebi's Hacienda</title>
+    <title>Jebi's Hacienda — Fresh Vegetables Delivered</title>
 </head>
-
 <body>
+    <!-- HEADER / NAVBAR -->
     <header id="header">
-        <img id="header-img" src="Logo.png">
+        <div class="logo-container">
+            <img id="header-img" src="Logo.png" alt="Jebi's Hacienda Logo">
             <div id="company">Jebi's Hacienda</div>
-
+        </div>
         <nav id="nav-bar">
-            <a class="nav-link" href="#Premium-Basket">PREMIUM BASKET</a> 
-            <a class="nav-link" href="#Normal-Basket">NORMAL BASKET</a> 
-            <a class="nav-link" href="#Budget-Basket">BUDGET BASKET</a>
+            <a class="nav-link" href="#Premium-Basket">Premium</a>
+            <a class="nav-link" href="#Normal-Basket">Normal</a>
+            <a class="nav-link" href="#Budget-Basket">Budget</a>
         </nav>
     </header>
 
-    <div id="container">
-    <section>
-        <div id="banner">
-            <p id="intro">"Here to deliver fresh and organic vegetables right at your doorstep".</p>
-         </div>
-    </section>
-
-<video id="video" class="product-video" controls>
-    <source src="product.mp4" type="video/mp4">
-</video>
-
-
-    <section class="product-card" id="Premium-Basket"> 
-        <h1>PREMIUM BASKET</h1>
-        <p>Perfect for health-conscious or gourmet customers. Includes a variety of fresh, high-quality, and somewhat exotic vegetables.</p>
-        <div>Contents: 
-            <ul>
-                <li>Broccoli (2kg)</li>
-                <li>Asparagus (1kg)</li>
-                <li>Kale (2 Bundles)</li>
-                <li>Baby Spinach (2 Bundles)</li>
-                <li>Bell Peppers (red, yellow, green) (2kg)</li>
-                <li>Cherry Tomatoes (1kg)</li>
-                <li>Mushrooms (2kg)</li>
-                <li>Carrots (2kg)</li>
-                <li>Onion Leeks (1kg)</li>
-            </ul>
-            <h2>Price: Php 4,500 </h2>
-            <img class="product-img" src="https://img.freepik.com/premium-photo/basket-vegetables-including-tomatoes-tomatoes-lettuce_1165469-1296.jpg" alt="#">
+    <!-- HERO / BANNER -->
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Fresh & Organic Vegetables, Delivered to Your Doorstep</h1>
+            <p>Choose from our premium, normal, or budget baskets to fit your lifestyle.</p>
+            <a href="#outro" class="btn-primary">Order Now</a>
         </div>
     </section>
 
-    <section class="product-card" id="Normal-Basket">
-        <h1>NORMAL BASKET</h1>
-        <p>Balanced selection of everyday vegetables. Good quality, accessible for most households.</p>
-        <div>Contents: 
-            <ul>
-                <li>Cabbage (2kg)</li>
-                <li>Eggplant (1kg)</li>
-                <li>Tomatoes (1kg)</li>
-                <li>Okra (1kg)</li>
-                <li>Sitaw (2 Bundles)</li>
-                <li>Kangkong (2 Bundles)</li>
-                <li>Potatoes (1kg)</li>
-                <li>Carrots (1 1/2kg)</li>
-            </ul>
-            <h2>Price: Php 3,000 </h2>
-            <img class="product-img" src="https://thumbs.dreamstime.com/b/basket-filled-colorful-vegetables-vintage-arrangement-mixed-light-background-looking-fresh-healthy-appetizing-184708950.jpg" alt="#">
+    <!-- PRODUCT VIDEO -->
+    <section id="video-section">
+        <video class="product-video" controls>
+            <source src="product.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- PRODUCT CARDS -->
+    <section class="products">
+        <div class="product-card" id="Premium-Basket">
+            <img class="product-img" src="https://img.freepik.com/premium-photo/basket-vegetables-including-tomatoes-tomatoes-lettuce_1165469-1296.jpg" alt="Premium Basket">
+            <div class="product-info">
+                <h2>Premium Basket</h2>
+                <p>Perfect for health-conscious or gourmet customers. Includes a variety of fresh, high-quality, and exotic vegetables.</p>
+                <ul>
+                    <li>Broccoli (2kg)</li>
+                    <li>Asparagus (1kg)</li>
+                    <li>Kale (2 Bundles)</li>
+                    <li>Baby Spinach (2 Bundles)</li>
+                    <li>Bell Peppers (2kg)</li>
+                    <li>Cherry Tomatoes (1kg)</li>
+                    <li>Mushrooms (2kg)</li>
+                    <li>Carrots (2kg)</li>
+                    <li>Onion Leeks (1kg)</li>
+                </ul>
+                <h3>Price: Php 4,500</h3>
+            </div>
+        </div>
+
+        <div class="product-card" id="Normal-Basket">
+            <img class="product-img" src="https://thumbs.dreamstime.com/b/basket-filled-colorful-vegetables-vintage-arrangement-mixed-light-background-looking-fresh-healthy-appetizing-184708950.jpg" alt="Normal Basket">
+            <div class="product-info">
+                <h2>Normal Basket</h2>
+                <p>Balanced selection of everyday vegetables. Good quality, accessible for most households.</p>
+                <ul>
+                    <li>Cabbage (2kg)</li>
+                    <li>Eggplant (1kg)</li>
+                    <li>Tomatoes (1kg)</li>
+                    <li>Okra (1kg)</li>
+                    <li>Sitaw (2 Bundles)</li>
+                    <li>Kangkong (2 Bundles)</li>
+                    <li>Potatoes (1kg)</li>
+                    <li>Carrots (1.5kg)</li>
+                </ul>
+                <h3>Price: Php 3,000</h3>
+            </div>
+        </div>
+
+        <div class="product-card" id="Budget-Basket">
+            <img class="product-img" src="https://miro.medium.com/0*oG4qm9APybt4LwSK.jpg" alt="Budget Basket">
+            <div class="product-info">
+                <h2>Budget Basket</h2>
+                <p>Affordable selection, staples for daily cooking. Perfect for cost-conscious buyers.</p>
+                <ul>
+                    <li>Cabbage (2kg)</li>
+                    <li>Eggplant (1kg)</li>
+                    <li>Tomatoes (1kg)</li>
+                    <li>Onion (1kg)</li>
+                    <li>Garlic (1kg)</li>
+                    <li>Kangkong (2 Bundles)</li>
+                    <li>Potatoes (1kg)</li>
+                    <li>Ampalaya (1kg)</li>
+                    <li>Sitaw (1 Bundle)</li>
+                </ul>
+                <h3>Price: Php 2,000</h3>
+            </div>
         </div>
     </section>
 
-    <section class="product-card" id="Budget-Basket">
-        <h1>BUDGET BASKET</h1>
-        <p>Affordable selection, staples for daily cooking. Perfect for cost-conscious buyers.</p>
-        <div>Contents: 
-            <ul>
-                <li>Cabbage (2kg)</li>
-                <li>Eggplant (1kg)</li>
-                <li>Tomatoes (1kg)</li>
-                <li>Onion (1kg)</li>
-                <li>Garlic (1kg)</li>
-                <li>Kangkong (2 Bundles)</li>
-                <li>Potatoes (1kg)</li>
-                <li>Ampalaya (1kg)</li>
-                <li>Sitaw (1 Bundle)</li>
-            </ul>
-            <h2>Price: Php 2,000 </h2>
-            <img class="product-img" src="https://miro.medium.com/0*oG4qm9APybt4LwSK.jpg" alt="#">
+    <!-- EMAIL CTA -->
+    <section id="outro">
+        <div class="email-cta">
+            <h2>Stay Updated!</h2>
+            <p>Enter your email to receive updates and place your order:</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <input name="email" id="email" type="email" placeholder="Enter Email Here" required>
+                <input id="submit" type="submit" value="Subscribe">
+            </form>
         </div>
     </section>
 
-<section id="outro">
-    <div>For inquiries or Orders, Please enter you email below:</div>
-    <br>
-    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-        <input 
-        name="email"
-        id="email" 
-        type="email" 
-        placeholder="Enter Email Here" required>
-
-        <input id="submit" type="submit" value="Submit">
-    </form>
-</section>
-</div>
-
-<div class="credit"> Creator: Jeyvezer Banwa </div>
-<div class="credit">All Rights Reserved @November 2025</div>
-
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Jebi's Hacienda. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
